@@ -10,5 +10,8 @@ Thumbs.db
 .vscode/
 *.iml
 
+# Configuração local de ferramentas de desenvolvimento
+.claude/
+
 # Logs
 *.log
