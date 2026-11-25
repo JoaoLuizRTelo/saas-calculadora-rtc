@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Ajuda } from "./ajuda";
 import Simulador from "./simulador";
 
@@ -10,6 +11,13 @@ export default function Home() {
           Reforma Tributária do Consumo <Ajuda termo="reforma" /> (LC 214/2025 <Ajuda termo="lc214" />). Os valores são
           calculados pela API oficial da calculadora da Receita Federal; este é um projeto independente e o resultado é
           uma simulação <Ajuda termo="simulacao" />.
+        </p>
+        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+          Novo na reforma? Faça o{" "}
+          <Link href="/curso" className="font-semibold text-emerald-800 underline dark:text-emerald-400">
+            mini curso
+          </Link>{" "}
+          antes de usar o simulador.
         </p>
       </header>
       <Simulador />

@@ -142,6 +142,93 @@ export const GLOSSARIO = {
     titulo: "Resultado",
     texto: "Valores calculados pela API oficial da Receita Federal para a operação informada.",
   },
+
+  // ---- Termos do mini curso (/curso)
+  efeitoCascata: {
+    titulo: "Efeito cascata",
+    texto:
+      "Quando um imposto é cobrado sobre outro imposto ao longo da cadeia, e o preço final carrega tributo sobre tributo. A reforma quer eliminar isso com a não cumulatividade.",
+  },
+  iva: {
+    titulo: "IVA dual",
+    texto:
+      "IVA é o imposto sobre o valor que cada etapa da cadeia acrescenta ao produto ou serviço, modelo usado em muitos países. No Brasil ele será \"dual\": a CBS (federal) e o IBS (estados e municípios), com regras muito parecidas.",
+  },
+  naoCumulatividade: {
+    titulo: "Não cumulatividade",
+    texto:
+      "Cada empresa desconta do imposto que deve o imposto que já foi pago nas compras. Assim o tributo recai só sobre o valor que ela acrescentou, e não se acumula ao longo da cadeia.",
+  },
+  credito: {
+    titulo: "Crédito",
+    texto:
+      "O valor de IBS e CBS pago nas compras de uma empresa, que ela pode abater do imposto devido nas vendas. A reforma prevê crédito amplo, mas há condições para usá-lo.",
+  },
+  destino: {
+    titulo: "Princípio do destino",
+    texto:
+      "O imposto pertence ao local onde o bem ou serviço é consumido, e não ao local onde é produzido. Por isso o estado e o município da operação entram no cálculo do IBS.",
+  },
+  splitPayment: {
+    titulo: "Split payment (pagamento dividido)",
+    texto:
+      "Na liquidação do pagamento (cartão, Pix etc.), o valor do IBS e da CBS é separado e vai direto ao governo, e o vendedor recebe o restante. Está em fase de testes e implantação.",
+  },
+  cashback: {
+    titulo: "Cashback",
+    texto:
+      "Devolução de parte do IBS e da CBS para famílias de baixa renda inscritas no CadÚnico, nas condições definidas em lei.",
+  },
+  aliquotaReferencia: {
+    titulo: "Alíquota de referência",
+    texto:
+      "Percentual calculado para que a arrecadação dos novos tributos substitua a dos antigos, sem aumentar nem reduzir a carga em conjunto. É fixada pelo Senado, a partir de cálculos do TCU (CBS) e do Comitê Gestor (IBS).",
+  },
+  aliquotaZero: {
+    titulo: "Alíquota zero",
+    texto:
+      "O produto ou serviço continua sendo tributado, mas a alíquota é 0%. Difere da isenção e da imunidade principalmente pelo tratamento dos créditos e pela forma como a lei define cada caso.",
+  },
+  cestaBasica: {
+    titulo: "Cesta Básica Nacional",
+    texto:
+      "Lista de alimentos essenciais (Anexo I da LC 214/2025) com alíquota zero de IBS e CBS: por exemplo arroz, feijão, leite, carnes e peixes, entre outros.",
+  },
+  anexo: {
+    titulo: "Anexo da lei",
+    texto:
+      "Lista de produtos ou serviços que acompanha a lei e define quem tem direito a um tratamento especial. Ex.: o Anexo II lista os serviços de educação.",
+  },
+  impostoSeletivo: {
+    titulo: "Imposto Seletivo (IS)",
+    texto:
+      "Imposto federal com função de desestimular o consumo de bens e serviços prejudiciais à saúde ou ao meio ambiente, como cigarros, bebidas alcoólicas e açucaradas e veículos poluentes.",
+  },
+  comiteGestor: {
+    titulo: "Comitê Gestor do IBS",
+    texto:
+      "Órgão nacional, com sede no Distrito Federal, criado pela LC 227/2026. Edita o regulamento único do IBS, coordena a arrecadação e distribui o dinheiro entre estados, DF e municípios.",
+  },
+  simples: {
+    titulo: "Simples Nacional",
+    texto:
+      "Regime simplificado de tributação para micro e pequenas empresas, que continua existindo. Quem é optante pode escolher recolher IBS e CBS pelo regime regular.",
+  },
+  regimeRegular: {
+    titulo: "Regime regular de IBS e CBS",
+    texto:
+      "A apuração \"normal\" dos dois tributos, com débitos e créditos. É o regime das empresas fora do Simples e também uma opção para as optantes.",
+  },
+  ec132: {
+    titulo: "Emenda Constitucional 132/2023",
+    texto:
+      "Alterou a Constituição para criar o IBS, a CBS e o Imposto Seletivo e extinguir os tributos antigos. As regras de detalhe vieram em leis complementares.",
+  },
+  lc227: {
+    titulo: "LC 227/2026",
+    texto:
+      "Lei Complementar 227/2026, de 13/01/2026: cria o Comitê Gestor do IBS, define o processo administrativo e a distribuição do imposto, e ajusta pontos da LC 214/2025.",
+  },
 } as const;
 
 export type Termo = keyof typeof GLOSSARIO;

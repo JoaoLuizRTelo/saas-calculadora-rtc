@@ -13,5 +13,14 @@ Thumbs.db
 # Configuração local de ferramentas de desenvolvimento
 .claude/
 
+# Lançador (.exe gerado, arquivos de build e logs da execução)
+/Sistema RTC.exe
+/logs/
+/launcher.json
+launcher/.venv-build/
+launcher/build/
+launcher/dist/
+launcher/icone.ico
+
 # Logs
 *.log
